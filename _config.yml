@@ -16,11 +16,11 @@
 title: iCode.co
 email: shadoow.ma@gmail.com
 description: > #
-  My personal blog, powered by jekyll and github
+  powered by jekyll and github
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://icode.co" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: shadcode
-github_username:  ShadOoW
+github_username: ShadOoW
+linkedin_username: younes-alami-85b88a90
 
 # Build settings
 markdown: kramdown

@@ -17,4 +17,4 @@ say_hi('Younes El Alami')
 Check out my open source projects at [github][github] or follow me on [linkedin][linkedin]
 
 [github]: http://github.com/ShadOoW
-[linkedin]:   https://www.linkedin.com/in/younes-alami-85b88a90
+[linkedin]: https://www.linkedin.com/in/younes-alami-85b88a90

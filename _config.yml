@@ -22,7 +22,8 @@ url: "http://icode.co" # the base hostname & protocol for your site, e.g. http:/
 github_username: ShadOoW
 linkedin_username: younes-alami-85b88a90
 google_analytics: UA-89357147-1
-disqus.shortname: icode-co
+disqus:
+  shortname: icode-co
 
 # Build settings
 markdown: kramdown

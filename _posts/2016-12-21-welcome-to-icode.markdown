@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to iCode.co!"
 date:   2016-12-21 01:31:01 +0800
 categories: misc
+comments: true
 ---
 Hi and welcome to icode.co, if all goes as planned I should start using this domain to blog about code.
 

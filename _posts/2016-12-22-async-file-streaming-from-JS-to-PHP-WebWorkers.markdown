@@ -3,6 +3,7 @@ layout: post
 title:  "Async file streaming from JS to PHP using WebWorkers"
 date:   2016-12-21 23:00:01 +0800
 categories: [Angular2, PHP]
+comments: true
 ---
 
 This gist demonstrate how to read a file from the browser using javascript asynchronously with web workers, and how to process the file on PHP server side.
@@ -64,7 +65,7 @@ openFile(e) {
 {% endhighlight %}
 
 - WebWorkers need to be defined as a seperate JS file, instead we use a Blob to inline the worker from an anonymous function.
-- Since webworkers run on their own thread, we have to call `_ngZone.run` to update Angular2 view from `syncWorker.onmessage` callback.
+- Since webworkers run on their own thread, we have to call `ngZone.run` to update Angular2 view from `syncWorker.onmessage` callback.
 
 ### Typings
 If your IDE or Webpack complains about missing typings for the webworkers or FileReaderSync functions, add custom typings to your angular2 bootstraping file.

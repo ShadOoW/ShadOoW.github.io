@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://icode.co" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: ShadOoW
 linkedin_username: younes-alami-85b88a90
+google_analytics: UA-89357147-1
 
 # Build settings
 markdown: kramdown
@@ -32,3 +33,4 @@ exclude:
   - Gemfile.lock
 
 destination: _deploy
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed/

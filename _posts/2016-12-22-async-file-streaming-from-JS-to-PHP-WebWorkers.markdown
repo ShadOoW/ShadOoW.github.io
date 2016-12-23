@@ -14,7 +14,7 @@ For demo and source code check src/app.ts in [Pluker Preview](https://plnkr.co/e
 ### HTML
 Angular2 Template
 {% highlight html %}
-<input type='file' accept='text/plain' (change)="openFile($event)">
+<input type='file' (change)="openFile($event)">
 {% endhighlight %}
 
 A simple input field, that triggers openFile function when on change event fires.
@@ -49,9 +49,9 @@ openFile(e) {
       )
     );
 
-    let syncWorker = new Worker(blobURL);
+    let worker = new Worker(blobURL);
 
-    syncWorker.onmessage = (e) => {
+    worker.onmessage = (e) => {
       let fileData = new Int8Array(e.data.result);
       // fileData contains the streamed file
       this.ngZone.run(() => {
@@ -59,7 +59,7 @@ openFile(e) {
       });
     };
 
-    syncWorker.postMessage(file);
+    worker.postMessage(file);
   }
 }
 {% endhighlight %}
